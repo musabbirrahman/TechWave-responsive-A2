@@ -175,6 +175,61 @@ nav #hidden{
     color: #00FF88;
     margin-bottom: 16px;
 }
+#choose{
+    background-color: #230E3D;
+    justify-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+#choose .section-title{
+    margin-bottom: 40px;
+}
+.box-container .box{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+}
+.box img{
+    margin-bottom: 16px;
+}
+.box h4{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+.box p{
+    color: #FFFFFF;
+    opacity: 60%;
+    font-size: 1rem;
+    line-height: 24px;
+}
+.audio{
+    grid-area: audio;
+}
+.device{
+    grid-area: device;
+}
+.location{
+    grid-area: location;
+}
+.fast{
+    grid-area: fast;
+}
+.resource{
+    grid-area: resource;
+}
+.box-container{
+    max-width: 1200px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "audio device device"
+    "audio location location"
+    "fast fast resource"
+    ;
+}
 
 /* Media query */
 
@@ -199,9 +254,13 @@ nav #hidden{
     }
     #banner{
         width: 100%;
+        padding-bottom: 40px;
     }
     #banner .banner-info p{
         text-align: center;
+    }
+    #podcast{
+        padding-bottom: 40px;
     }
     #podcast hr{
         margin-top: 40px;
@@ -220,6 +279,27 @@ nav #hidden{
     .podcast-info .big-gap{
         margin-bottom: 10px;
     }
+    #choose{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #choose .section-title{
+        font-size: 32px;
+    }
+    .box-container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+        "audio"
+        "device"
+        "location"
+        "fast"
+        "resource"
+        ;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     
 }
 
@@ -242,6 +322,19 @@ nav #hidden{
     .podcast-info .big-gap{
         margin-bottom: 15px;
     }
+    .box-container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+        "audio"
+        "device"
+        "location"
+        "fast"
+        "resource"
+        ;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 
@@ -249,5 +342,9 @@ nav #hidden{
 @media screen and (min-width: 992px) {
     nav #hidden{
         display: none;
+    }
+    .box-container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
