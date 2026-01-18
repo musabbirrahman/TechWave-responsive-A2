@@ -25,6 +25,7 @@
     border-radius: 10000px;
     color: #FFFFFF;
     background: linear-gradient(45deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    cursor: pointer;
 
 }
 /* Main styles */
@@ -64,6 +65,63 @@ nav ul li a{
 nav #hidden{
     display: none;
 }
+
+#banner{
+    background: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
+    padding-top: 101px;
+    padding-bottom: 101px;
+
+}
+.banner-images{
+    position: relative;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.banner-images #circle{
+    object-fit: contain;
+}
+.banner-images #mic{
+    position: absolute;
+    transform: translateY(50%);
+}
+.banner-info{
+    justify-items: center;
+}
+
+.banner-info h1{
+    color: #FFFFFF;
+    font-size: 3.75rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+
+}
+.banner-info p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 80%;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    display: flex;
+    gap: 8px;
+
+}
+.banner-btn .btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.banner-btn .btn-green{
+    border: 1px solid #00FF88;
+    background: transparent;
+    color: #00FF88;
+}
+
 
 
 /* Media query */
