@@ -28,6 +28,24 @@
     cursor: pointer;
 
 }
+
+.section-title{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.section-description{
+    font-size: 1rem;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 80%;
+    margin-bottom: 16px;
+
+}
+.big-gap{
+    margin-bottom: 50px;
+}
 /* Main styles */
 header{
     background-color: #1A0B2E;
@@ -69,7 +87,8 @@ nav #hidden{
 #banner{
     background: url("assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
     /* background-position: center; */
     padding-top: 101px;
     padding-bottom: 101px;
@@ -122,8 +141,39 @@ nav #hidden{
     color: #00FF88;
 }
 
-
-
+#podcast{
+    justify-items: center;
+    text-align: center;
+    background-color: #1A0B2E;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+#podcast hr{
+    color: #FFFFFF;
+    opacity: 10%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 75%;
+}
+/* .podcast-info{
+    width: 75%;
+} */
+.card-box{
+    display: flex;
+    gap: 80px;
+    
+}
+.card-box .card{
+    padding: 10px 30px;
+    text-align: center;
+    justify-content: center;
+}
+.card .card-heading{
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.card .
 /* Media query */
 
 /* for small device */
@@ -145,6 +195,7 @@ nav #hidden{
         width: 24px;
         height: 24px;
     }
+
     
 }
 
