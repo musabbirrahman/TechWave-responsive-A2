@@ -46,6 +46,7 @@
 .big-gap{
     margin-bottom: 50px;
 }
+
 /* Main styles */
 header{
     background-color: #1A0B2E;
@@ -159,7 +160,8 @@ nav #hidden{
     width: 75%;
 } */
 .card-box{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     
 }
@@ -173,7 +175,7 @@ nav #hidden{
     color: #00FF88;
     margin-bottom: 16px;
 }
-.card .
+
 /* Media query */
 
 /* for small device */
@@ -195,7 +197,29 @@ nav #hidden{
         width: 24px;
         height: 24px;
     }
-
+    #banner{
+        width: 100%;
+    }
+    #banner .banner-info p{
+        text-align: center;
+    }
+    #podcast hr{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #podcast .card-box{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .podcast-info{
+        padding: 0 10px;
+    }
+    .podcast-info .section-description{
+        margin-bottom: 5px;
+    }
+    .podcast-info .big-gap{
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -204,6 +228,19 @@ nav #hidden{
 @media screen and (min-width: 576px) and (max-width: 992px) {
     nav ul{
         gap: 20px;
+    }
+    #podcast .card-box{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+    .podcast-info{
+        padding: 0 20px;
+    }
+    .podcast-info .section-description{
+        margin-bottom: 10px;
+    }
+    .podcast-info .big-gap{
+        margin-bottom: 15px;
     }
 }
 
