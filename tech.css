@@ -31,11 +31,12 @@
 header{
     background-color: #1A0B2E;
     border: 1px solid #412567;
-    padding: 16px 200px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
 }
@@ -72,6 +73,9 @@ nav #hidden{
     header{
         padding: 16px 20px;
     }
+    nav{
+        justify-content: space-between;
+    }
     nav ul {
         display: none;
     }
@@ -84,6 +88,14 @@ nav #hidden{
         height: 24px;
     }
     
+}
+
+
+/* for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav ul{
+        gap: 20px;
+    }
 }
 
 
