@@ -125,6 +125,18 @@ nav #hidden{
     position: absolute;
     transform: translateY(50%);
 }
+.banner-images .badge{
+    position: absolute;
+    top: 4%;
+    right: 41%;
+    background-color: #00FF88;
+    border-radius: 1000px;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+    color: #1A0B2E;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 16px;
+}
 .banner-info{
     justify-items: center;
 }
@@ -451,6 +463,9 @@ footer .footer-container{
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    #featured .section-title{
+        font-size: 2rem;
+    }
     .feature-container{
         flex-direction: column;
         gap: 30px;
@@ -500,6 +515,14 @@ footer .footer-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         margin-bottom: 10px;
+    }
+    .banner-images .badge{
+        position: absolute;
+        top: 4%;
+        right: 20%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 8px 16px;
     }
 
     
@@ -558,6 +581,15 @@ footer .footer-container{
     #host{
         padding: 40px 20px;
     }
+    .banner-images .badge{
+        position: absolute;
+        top: 4%;
+        right: 33%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 8px 16px;
+    }
+
 
 }
 
