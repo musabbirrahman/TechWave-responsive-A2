@@ -88,9 +88,8 @@ nav #hidden{
 #banner{
     background: url("assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    /* background-position: center; */
+    background-size: 100%;
+    background-position: center;
     padding-top: 101px;
     padding-bottom: 101px;
 
@@ -321,6 +320,51 @@ nav #hidden{
     
     
 }
+
+footer{
+    background: url("assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-items: center;
+    padding: 120px;
+    background-size: cover;
+}
+footer h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 32px;
+    max-width: 544px;
+    gap: 40px;
+}
+.footer-card{
+    display: flex;
+    
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.footer-card img{
+    height: 24px;
+    width: 24px;
+}
+.footer-card p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 60%;
+    align-items: center;
+}
+.footer-desclaimer{
+    color: #FAFAFA;
+    font-size: 1rem;
+    line-height: 24px;
+    opacity: 60%;
+}
 /* Media query */
 
 /* for small device */
@@ -430,6 +474,19 @@ nav #hidden{
         gap: 8px;
         margin: 0 auto;
     
+    }
+    footer{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .footer-desclaimer{
+        font-size: 0.8rem;
+    }
+    footer .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
     }
 
     
