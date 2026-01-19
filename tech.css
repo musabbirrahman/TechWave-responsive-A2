@@ -105,12 +105,13 @@ nav #hidden{
 #banner{
     background: url("assets/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     padding-top: 101px;
     padding-bottom: 101px;
 
 }
+
 .banner-images{
     position: relative;
     display: flex;
@@ -350,11 +351,11 @@ footer{
     background: url("assets/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     justify-items: center;
     padding: 120px;
     background-size: cover;
 }
+
 footer h2{
     font-size: 3rem;
     color: #FFFFFF;
@@ -395,10 +396,11 @@ footer .footer-container{
 /* for small device */
 @media screen and (max-width: 576px) {
     header{
-        padding: 16px 20px;
+        /* padding: 16px 20px; */
     }
     nav{
         justify-content: space-between;
+        padding: 16px 20px;
     }
     nav ul {
         display: none;
@@ -415,9 +417,13 @@ footer .footer-container{
         width: 100%;
         padding-bottom: 40px;
     }
+    .banner-info{
+        padding: 10px;
+    }
     #banner .banner-info p{
         text-align: center;
     }
+    
     #podcast{
         padding-bottom: 40px;
         padding-top: 40px;
