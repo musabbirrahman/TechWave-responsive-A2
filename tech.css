@@ -276,7 +276,7 @@ nav #hidden{
     align-items: center;
 }
 .feature-container .feature-card{
-    width: 380px;
+    max-width: 380px;
     border-radius: 10px;
     background-color: #250D44;
     transition: all 0.3s ease;
@@ -456,6 +456,18 @@ footer .footer-container{
     .banner-info{
         padding: 10px;
     }
+    .banner-images #circle{
+        width: 250px;
+        height: 250px;
+    }
+    .banner-images #mic{
+        width: 80px;
+        transform: translateY(50%);
+    }
+    .banner-info h1{
+        font-size: 3rem;
+    }
+
     #banner .banner-info p{
         text-align: center;
     }
@@ -486,7 +498,7 @@ footer .footer-container{
         padding-bottom: 40px;
     }
     #choose .section-title{
-        font-size: 32px;
+        font-size: 1.8rem;
     }
     .box-container{
     display: grid;
@@ -500,6 +512,9 @@ footer .footer-container{
         ;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .card .card-heading{
+        font-size: 2rem;
     }
     #featured{
         padding-top: 40px;
@@ -525,6 +540,9 @@ footer .footer-container{
     #host{
         padding: 40px 20px;
     }
+    #host .section-title{
+        font-size: 2.5rem;
+    }
     .host-card{
         flex-direction: column;
         max-width: 1200px;
@@ -534,7 +552,7 @@ footer .footer-container{
         text-align: center;
         background-color: rgba(53, 17, 101, 0.4);
         border-radius: 20px;
-        padding: 48px 40px;
+        padding: 48px 20px;
     }
     .host-card .social{
         justify-items: center;
@@ -545,10 +563,9 @@ footer .footer-container{
         margin: 0 auto;
     
     }
-    footer{
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
+    footer {
+    text-align: center;
+    padding: 40px 20px; 
     }
     footer .footer-desclaimer{
         font-size: 0.8rem;
@@ -561,7 +578,7 @@ footer .footer-container{
     .banner-images .badge{
         position: absolute;
         top: 4%;
-        right: 20%;
+        right: 25%;
         font-size: 1rem;
         font-weight: 600;
         padding: 8px 16px;
@@ -623,6 +640,7 @@ footer .footer-container{
     #host{
         padding: 40px 20px;
     }
+    
     .banner-images .badge{
         position: absolute;
         top: 4%;
