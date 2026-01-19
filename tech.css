@@ -26,9 +26,26 @@
     color: #FFFFFF;
     background: linear-gradient(45deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
     cursor: pointer;
+    transition: 0.3s;
 
 }
 
+.btn:hover{
+    transform: translateY(-2px);
+    background: linear-gradient(
+    45deg,
+    rgb(207, 191, 15) 0%,
+    rgba(255, 0, 187, 0.789) 51%,
+    rgba(140, 0, 255, 0.59) 100%);
+}
+.banner-btn .btn-green{
+    border: 1px solid #00FF88;
+    background: transparent;
+    color: #00FF88;
+}
+.btn-green:hover{
+    border: 1px solid white;
+}
 .section-title{
     font-size: 3rem;
     color: #FFFFFF;
@@ -135,11 +152,7 @@ nav #hidden{
     align-items: center;
     gap: 8px;
 }
-.banner-btn .btn-green{
-    border: 1px solid #00FF88;
-    background: transparent;
-    color: #00FF88;
-}
+
 
 #podcast{
     justify-items: center;
