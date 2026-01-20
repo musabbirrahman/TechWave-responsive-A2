@@ -352,19 +352,17 @@ nav #hidden{
 .host-card .social-logo{
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 50%;
+    /* padding: 5px; */
     
     
 }
 .host-card .social img{
-    border: 1px solid #533C72;
-    border-radius: 1000px;
-    padding: 5px;
-    width: 20px;
-    height: auto;
-    cursor: pointer;
-    
-    
-    
+    cursor: pointer;   
 }
 
 footer{
@@ -687,5 +685,5 @@ footer .footer-container{
     #host{
         padding-left: 40px;
         padding-right: 40px;
-}
+    }
     }
