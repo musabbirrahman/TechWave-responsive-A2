@@ -353,14 +353,16 @@ nav #hidden{
     width: 40px;
     height: 40px;
     
+    
 }
 .host-card .social img{
     border: 1px solid #533C72;
     border-radius: 1000px;
-    padding: 10px;
+    padding: 5px;
     width: 20px;
     height: auto;
     cursor: pointer;
+    
     
     
 }
@@ -427,6 +429,7 @@ footer .footer-container{
 .banner-images .badge {
     animation: pulse-green 2s infinite;
 }
+
 /* Media query */
 
 /* for small device */
@@ -451,18 +454,27 @@ footer .footer-container{
     }
     #banner{
         width: 100%;
-        padding-bottom: 40px;        
+        padding-bottom: 40px;
+        background-image: url("assets/Image.png");
+        background-position: center center;
+        background-size: cover;
+        padding-top: 45px;      
     }
     .banner-info{
         padding: 10px;
     }
     .banner-images #circle{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     .banner-images #mic{
-        width: 80px;
-        transform: translateY(50%);
+        width: 47px;
+        height: 70px;
+        /* transform: translateY(20%); */
+        position: absolute;
+        top: 15%;
+        
+        
     }
     .banner-info h1{
         font-size: 3rem;
@@ -564,8 +576,11 @@ footer .footer-container{
     
     }
     footer {
-    text-align: center;
-    padding: 40px 20px; 
+        text-align: center;
+        padding: 40px 20px;
+        background-image: url("assets/Image2.png");
+        background-size: cover;
+        background-position: center;
     }
     footer .footer-desclaimer{
         font-size: 0.8rem;
@@ -578,7 +593,7 @@ footer .footer-container{
     .banner-images .badge{
         position: absolute;
         top: 4%;
-        right: 25%;
+        right: 28%;
         font-size: 1rem;
         font-weight: 600;
         padding: 8px 16px;
